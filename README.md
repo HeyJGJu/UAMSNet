@@ -1,5 +1,4 @@
-# UAMSNet
-#### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。
+# UAMSNet for Abdominal Multi-organ Segmentation
+
+Segmenting abdominal organs from computer tomography (CT) is essential for computer-assisted diagnosis, surgical planning, and radiation therapy.  Radiologists or oncologists manually delineate organ segmentation in their clinical practice.  This is a labor-intensive and time-consuming process, and it often suffers from large inter observer variations, especially for various categories of abdominal organs.  Moreover, inexperienced doctors can easily miss diagnoses or misidentify, which may bring certain risks to the patient's life. Therefore, there is an urgent clinical need for accurate automatic organ segmentation methods
+
