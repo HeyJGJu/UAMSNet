@@ -29,9 +29,9 @@ def mask_to_onehot(mask, palette):
 
 class WORD_Loader(torch.utils.data.Dataset):
 
-    def __init__(self,  img_paths, mask_paths, transform=None):
+    def __init__(self, img_paths, transform=None):
         self.img_paths = glob.glob(img_paths)
-        self.mask_paths = glob.glob(mask_paths)
+        self.mask_paths = glob.glob(img_paths.replace('npyImages', 'npyMasks'))
         self.transform = transform
         self.palette = [[0], [1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11], [12], [13], [14],[15], [16]]
         # self.palette = [[0], [1], [2], [3], [4], [5], [6], [7], [8]]
@@ -48,7 +48,7 @@ class WORD_Loader(torch.utils.data.Dataset):
         npimage = npimage.transpose((2, 0, 1))
         
         
-        unique_nums = np.unique(label)  
+        unique_nums = np.unique(npmask)  
         unique_nums = unique_nums.tolist()  
         unique_nums.sort() 
         labelindex = [1 if x[0] in unique_nums else 0 for x in self.palette]
