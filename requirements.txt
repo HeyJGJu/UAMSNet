@@ -1,0 +1,12 @@
+torch==1.12.1 
+torchvision==0.13.1
+numpy
+tqdm
+pandas
+tensorboard
+tensorboardX
+opencv-python
+medpy
+SimpleITK
+scipy
+h5py
