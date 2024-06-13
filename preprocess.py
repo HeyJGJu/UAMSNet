@@ -1,7 +1,4 @@
-# -*- codeing = utf-8 -*-
-# @Author : linxihao
-# @File : preprocess.py
-# @Software : PyCharm
+
 import os
 import numpy as np
 import SimpleITK as sitk
